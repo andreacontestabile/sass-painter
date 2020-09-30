@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 * {
   margin: 0;
   padding: 0;
@@ -35,7 +37,7 @@ header .user-actions-list-item {
 }
 
 header .user-actions-list-item i {
-  color: #28ACFF;
+  color: #009bfc;
 }
 
 header .user-actions-list-item a {
@@ -83,5 +85,137 @@ header .main-nav-list a .logo-img {
 
 header .main-nav-list #logo {
   padding: 0 10px 0 0;
+}
+
+.hero {
+  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  background-size: cover;
+  padding-top: 20px;
+  color: #fff;
+}
+
+.hero .container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero .hero-left {
+  padding: 30px 60px 30px 0;
+}
+
+.hero .hero-left h1 {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.hero .hero-left > h2 {
+  font-weight: 400;
+  font-size: 20px;
+  margin: 10px 0 20px;
+}
+
+.hero .hero-left .features-list {
+  list-style: none;
+  margin-left: 5px;
+}
+
+.hero .hero-left .features-list-item {
+  padding: 5px 0;
+}
+
+.hero .hero-left .features-list-item:before {
+  content: "\F054";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+.hero .hero-left .btn-download {
+  display: flex;
+  background-color: #5C5C5A;
+  color: #fff;
+  margin-top: 25px;
+  padding: 8px 0 10px 14px;
+  outline: none;
+  border: none;
+}
+
+.hero .hero-left .btn-download .btn-text {
+  padding-right: 12px;
+  text-align: left;
+  border-right: 1px solid #fff;
+}
+
+.hero .hero-left .btn-download .btn-text h2 {
+  margin: 3px 0;
+  font-size: 14px;
+}
+
+.hero .hero-left .btn-download .btn-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  line-height: 50px;
+}
+
+.hero .hero-left .btn-download .btn-icon i {
+  font-size: 24px;
+  padding: 5px 12px 0;
+  vertical-align: middle;
+}
+
+.hero .hero-right .pricing-box {
+  padding: 20px 20px 120px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.hero .hero-right .pricing-box-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero .hero-right .pricing-box-top .price {
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+
+.hero .hero-right .pricing-box-top .price h2 {
+  font-weight: 400;
+}
+
+.hero .hero-right .pricing-box .btn-buy {
+  padding: 10px 30px;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 15px;
+  background-color: #009bfc;
+}
+
+.hero .hero-right .pricing-box .limited-offer {
+  margin-top: 40px;
+  padding: 15px;
+  background-color: #E6E6E6;
+  color: #333;
+}
+
+.hero .hero-right .pricing-box .limited-offer h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.hero .hero-right .pricing-box .limited-offer p {
+  font-size: 14px;
+}
+
+.hero .hero-right .pricing-box .limited-offer a {
+  font-size: 13px;
+  color: #009bfc;
+  text-decoration: none;
 }
 
