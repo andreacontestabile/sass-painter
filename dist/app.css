@@ -361,3 +361,71 @@ section.content-section#inspire .container {
   color: #fff;
   font-weight: 600;
 }
+
+footer .footer-top {
+  padding: 40px 0 0;
+}
+footer .footer-top .container {
+  display: flex;
+}
+footer .footer-top h4 {
+  margin-bottom: 5px;
+  color: #000;
+  font-size: 13px;
+  font-weight: 400;
+}
+footer .footer-top .alt-nav-column {
+  width: 25%;
+}
+footer .footer-top .alt-nav-column .alt-nav-column-list {
+  list-style: none;
+}
+footer .footer-top .alt-nav-column .alt-nav-column-list-item a {
+  font-size: 11px;
+  text-decoration: none;
+  color: #4d4d4d;
+}
+footer .footer-top .alt-nav-column .alt-nav-column-list-item a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+footer .socials-bar {
+  padding: 10px 0;
+}
+footer .socials-bar .socials-list {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 45px;
+}
+footer .socials-bar .socials-list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+}
+footer .socials-bar .socials-list li#socials-ig {
+  background-color: #E4405F;
+}
+footer .socials-bar .socials-list li#socials-fb {
+  background-color: #3B5998;
+}
+footer .socials-bar .socials-list li#socials-tw {
+  background-color: #1DA1F2;
+}
+footer .socials-bar .socials-list li#socials-yt {
+  background-color: #CD201F;
+}
+footer .socials-bar .socials-list li#socials-pin {
+  background-color: #BD081C;
+}
+footer .socials-bar .socials-list li#socials-rss {
+  background-color: #FF8D00;
+}
+footer .socials-bar .socials-list li:not(:last-child) {
+  margin-right: 10px;
+}
+footer .socials-bar .socials-list li a {
+  font-size: 20px;
+  color: #fff;
+}
