@@ -364,9 +364,7 @@ section.content-section#inspire .container {
 
 footer .footer-top {
   padding: 40px 0 0;
-}
-footer .footer-top .container {
-  display: flex;
+  background-color: #ececec;
 }
 footer .footer-top h4 {
   margin-bottom: 5px;
@@ -374,18 +372,21 @@ footer .footer-top h4 {
   font-size: 13px;
   font-weight: 400;
 }
-footer .footer-top .alt-nav-column {
+footer .footer-top .alt-nav {
+  display: flex;
+}
+footer .footer-top .alt-nav .alt-nav-column {
   width: 25%;
 }
-footer .footer-top .alt-nav-column .alt-nav-column-list {
+footer .footer-top .alt-nav .alt-nav-column .alt-nav-column-list {
   list-style: none;
 }
-footer .footer-top .alt-nav-column .alt-nav-column-list-item a {
+footer .footer-top .alt-nav .alt-nav-column .alt-nav-column-list-item a {
   font-size: 11px;
   text-decoration: none;
   color: #4d4d4d;
 }
-footer .footer-top .alt-nav-column .alt-nav-column-list-item a:hover {
+footer .footer-top .alt-nav .alt-nav-column .alt-nav-column-list-item a:hover {
   color: #333;
   text-decoration: underline;
 }
@@ -427,5 +428,46 @@ footer .socials-bar .socials-list li:not(:last-child) {
 }
 footer .socials-bar .socials-list li a {
   font-size: 20px;
+  color: #fff;
+}
+footer .footer-bottom {
+  padding: 10px 0;
+  background-color: #1e1e1e;
+}
+footer .footer-bottom .container {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-bottom .sponsors .sponsors-list {
+  display: flex;
+  list-style: none;
+}
+footer .footer-bottom .sponsors .sponsors-list .sponsors-list-item:not(:last-child) {
+  margin-right: 20px;
+}
+footer .footer-bottom .copyright {
+  display: flex;
+}
+footer .footer-bottom .copyright .copyright-nav .copyright-nav-list {
+  display: flex;
+  list-style: none;
+  margin-top: 12px;
+}
+footer .footer-bottom .copyright .copyright-nav .copyright-nav-list-item {
+  font-size: 0;
+}
+footer .footer-bottom .copyright .copyright-nav .copyright-nav-list-item a {
+  padding: 0 15px;
+  font-size: 11px;
+  color: #999;
+  text-decoration: none;
+}
+footer .footer-bottom .copyright .copyright-nav .copyright-nav-list-item a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+footer .footer-bottom .copyright .copyright-nav .copyright-nav-list p {
+  margin-left: 10px;
+  font-size: 11px;
   color: #fff;
 }

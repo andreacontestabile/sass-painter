@@ -1,10 +1,7 @@
 footer {
   .footer-top {
     padding: 40px 0 0;
-
-    .container {
-      display: flex;
-    }
+    background-color: #ececec;
 
     h4 {
       margin-bottom: 5px;
@@ -12,21 +9,26 @@ footer {
       font-size: 13px;
       font-weight: 400;
     }
-    .alt-nav-column {
-      width: 25%;
 
-      .alt-nav-column-list {
-        list-style: none;
+    .alt-nav {
+      display: flex;
 
-        &-item {
-          a {
-            font-size: 11px;
-            text-decoration: none;
-            color: #4d4d4d;
+      .alt-nav-column {
+        width: 25%;
 
-            &:hover {
-              color: #333;
-              text-decoration: underline;
+        .alt-nav-column-list {
+          list-style: none;
+
+          &-item {
+            a {
+              font-size: 11px;
+              text-decoration: none;
+              color: #4d4d4d;
+
+              &:hover {
+                color: #333;
+                text-decoration: underline;
+              }
             }
           }
         }
@@ -85,5 +87,62 @@ footer {
       }
     }
 
+  }
+
+  .footer-bottom {
+    padding: 10px 0;
+    background-color: $footerColor;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .sponsors {
+      .sponsors-list {
+        @include listFlex;
+
+        .sponsors-list-item {
+
+          &:not(:last-child) {
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+
+    .copyright {
+      display: flex;
+
+      .copyright-nav {
+        .copyright-nav-list {
+          @include listFlex;
+          margin-top: 12px;
+
+          &-item {
+            font-size: 0;
+            a {
+              padding: 0 15px;
+              font-size: 11px;
+              color: #999;
+              text-decoration: none;
+
+              &:hover {
+                color: #fff;
+                text-decoration: underline;
+              }
+            }
+          }
+
+          p {
+            margin-left: 10px;
+            font-size: 11px;
+            color: #fff;
+          }
+        }
+      }
+
+
+    }
   }
 }
