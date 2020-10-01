@@ -119,7 +119,7 @@ section.content-section {
 
   &#inspire {
     padding-bottom: 80px;
-    
+
     .container {
       width: 1400px;
     }
@@ -174,7 +174,14 @@ section.content-section {
       width: 250px;
       position: relative;
       background-color: blue;
-      background-size: cover;
+      background-size: 100%;
+      background-position: center;
+      transition: background-size 0.5s;
+
+
+      &:hover {
+        background-size: 110%;
+      }
 
       &#mirror-tool {
         background-image: url('../img/mirror.jpg');

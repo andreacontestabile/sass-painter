@@ -335,7 +335,12 @@ section.content-section#inspire .container {
   width: 250px;
   position: relative;
   background-color: blue;
-  background-size: cover;
+  background-size: 100%;
+  background-position: center;
+  transition: background-size 0.5s;
+}
+.tools-showcase-list-item:hover {
+  background-size: 110%;
 }
 .tools-showcase-list-item#mirror-tool {
   background-image: url("../img/mirror.jpg");
