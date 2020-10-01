@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 * {
   margin: 0;
   padding: 0;
@@ -19,53 +18,43 @@ header {
   height: 95px;
   background-color: #101010;
 }
-
 header .user-actions {
   height: 45px;
   line-height: 45px;
 }
-
 header .user-actions-list {
   display: flex;
   list-style: none;
   justify-content: flex-end;
   font-size: 13px;
 }
-
 header .user-actions-list-item {
   margin-right: 20px;
 }
-
 header .user-actions-list-item i {
   color: #009bfc;
 }
-
 header .user-actions-list-item a {
   margin-left: 10px;
   color: #989898;
   text-decoration: none;
 }
-
 header .user-actions-list-item a:hover {
   color: #fff;
   text-decoration: underline;
 }
-
 header .main-nav {
   height: 50px;
   line-height: 50px;
 }
-
 header .main-nav-list {
   display: flex;
   list-style: none;
   font-size: 13px;
 }
-
 header .main-nav-list-item:first-child a:hover {
   background: none;
 }
-
 header .main-nav-list a {
   display: block;
   height: 100%;
@@ -73,58 +62,48 @@ header .main-nav-list a {
   color: #fff;
   text-decoration: none;
 }
-
 header .main-nav-list a:hover {
   background-color: #E6E6E6;
   color: #000;
 }
-
 header .main-nav-list a .logo-img {
   width: 90px;
 }
-
 header .main-nav-list #logo {
   padding: 0 10px 0 0;
 }
 
 .hero {
-  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg");
+  background-image: url("../img/hero.jpg");
   background-repeat: no-repeat;
   background-position: 100% 50%;
   background-size: cover;
   padding-top: 20px;
   color: #fff;
 }
-
 .hero .container {
   display: flex;
   justify-content: flex-end;
 }
-
 .hero .hero-left {
   padding: 30px 60px 30px 0;
 }
-
 .hero .hero-left h1 {
   font-size: 28px;
   font-weight: 400;
 }
-
 .hero .hero-left > h2 {
   font-weight: 400;
   font-size: 20px;
   margin: 10px 0 20px;
 }
-
 .hero .hero-left .features-list {
   list-style: none;
   margin-left: 5px;
 }
-
 .hero .hero-left .features-list-item {
   padding: 5px 0;
 }
-
 .hero .hero-left .features-list-item:before {
   content: "\F054";
   font-family: "Font Awesome 5 Free";
@@ -133,7 +112,6 @@ header .main-nav-list #logo {
   font-size: 14px;
   color: #666;
 }
-
 .hero .hero-left .btn-download {
   display: flex;
   background-color: #5C5C5A;
@@ -143,18 +121,15 @@ header .main-nav-list #logo {
   outline: none;
   border: none;
 }
-
 .hero .hero-left .btn-download .btn-text {
   padding-right: 12px;
   text-align: left;
   border-right: 1px solid #fff;
 }
-
 .hero .hero-left .btn-download .btn-text h2 {
   margin: 3px 0;
   font-size: 14px;
 }
-
 .hero .hero-left .btn-download .btn-icon {
   display: flex;
   justify-content: center;
@@ -162,32 +137,26 @@ header .main-nav-list #logo {
   height: 100%;
   line-height: 50px;
 }
-
 .hero .hero-left .btn-download .btn-icon i {
   font-size: 24px;
   padding: 5px 12px 0;
   vertical-align: middle;
 }
-
 .hero .hero-right .pricing-box {
   padding: 20px 20px 120px;
   background-color: rgba(0, 0, 0, 0.9);
 }
-
 .hero .hero-right .pricing-box-top {
   display: flex;
   justify-content: space-between;
 }
-
 .hero .hero-right .pricing-box-top .price {
   align-self: flex-end;
   margin-bottom: 20px;
 }
-
 .hero .hero-right .pricing-box-top .price h2 {
   font-weight: 400;
 }
-
 .hero .hero-right .pricing-box .btn-buy {
   padding: 10px 30px;
   border: none;
@@ -196,26 +165,199 @@ header .main-nav-list #logo {
   font-size: 15px;
   background-color: #009bfc;
 }
-
 .hero .hero-right .pricing-box .limited-offer {
   margin-top: 40px;
   padding: 15px;
   background-color: #E6E6E6;
   color: #333;
 }
-
 .hero .hero-right .pricing-box .limited-offer h3 {
   font-size: 18px;
   font-weight: 600;
 }
-
 .hero .hero-right .pricing-box .limited-offer p {
   font-size: 14px;
 }
-
 .hero .hero-right .pricing-box .limited-offer a {
   font-size: 13px;
   color: #009bfc;
   text-decoration: none;
 }
 
+.section-nav {
+  height: 50px;
+  background-color: #E6E6E6;
+  line-height: 50px;
+}
+.section-nav .container {
+  height: 100%;
+}
+.section-nav .container .section-nav-list {
+  display: flex;
+  list-style: none;
+  height: 100%;
+}
+.section-nav .container .section-nav-list li {
+  height: 100%;
+}
+.section-nav .container .section-nav-list li a {
+  display: block;
+  height: 100%;
+  padding: 0 20px;
+  text-decoration: none;
+  color: #555;
+  font-size: 16px;
+}
+.section-nav .container .section-nav-list li a.active {
+  background-color: #fff;
+  border-bottom: 3px inset #000;
+  color: #000;
+  font-weight: 600;
+}
+.section-nav .container .section-nav-list li a:hover {
+  background-color: #EEEEEE;
+}
+
+section.content-section {
+  padding-top: 80px;
+  text-align: center;
+  color: #333;
+}
+section.content-section h2 {
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: 400;
+}
+section.content-section p {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+section.content-section a {
+  text-decoration: none;
+  color: #fff;
+}
+section.content-section img.section-img {
+  display: block;
+  margin: 40px auto 0;
+  width: 100%;
+  max-width: 900px;
+}
+section.content-section#intro {
+  color: #fff;
+  background-image: url(../img/intro-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+section.content-section#intro a:before {
+  content: "\F1C1";
+  font-family: "Font Awesome 5 Free";
+  font-size: 22px;
+  font-weight: 900;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+section.content-section#intro img#intro-screen {
+  background-image: url(../img/intro-screen-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 20px;
+}
+section.content-section#ai {
+  padding-bottom: 60px;
+}
+section.content-section.parallax {
+  height: 650px;
+  background-attachment: fixed;
+}
+section.content-section#parallax-1 {
+  background-image: url(../img/parallax-bg1.jpg);
+}
+section.content-section#parallax-2 {
+  background-image: url(../img/parallax-bg2.jpg);
+}
+section.content-section#features {
+  color: #fff;
+  background-color: #222;
+}
+section.content-section#features .container > img {
+  max-width: 770px;
+  margin: 20px auto 80px;
+}
+section.content-section#inspire {
+  padding-bottom: 80px;
+}
+section.content-section#inspire .container {
+  width: 1400px;
+}
+
+.feature-box {
+  display: flex;
+  align-content: center;
+  padding-bottom: 60px;
+}
+.feature-box img {
+  width: 55%;
+  margin: 0;
+}
+.feature-box .feature-description {
+  margin-top: 140px;
+  padding-left: 40px;
+  padding-right: 80px;
+  width: 45%;
+  text-align: left;
+}
+.feature-box .feature-description h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.feature-box .feature-description p {
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+.feature-box:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.tools-showcase {
+  margin-top: 60px;
+}
+.tools-showcase-list {
+  display: flex;
+  justify-content: space-between;
+}
+.tools-showcase-list-item {
+  display: block;
+  height: 250px;
+  width: 250px;
+  position: relative;
+  background-color: blue;
+  background-size: cover;
+}
+.tools-showcase-list-item#mirror-tool {
+  background-image: url("../img/mirror.jpg");
+}
+.tools-showcase-list-item#navigator-tool {
+  background-image: url("../img/navigator.jpg");
+}
+.tools-showcase-list-item#kaleidoscope-tool {
+  background-image: url("../img/kaleidoscope.jpg");
+}
+.tools-showcase-list-item#woodcut-tool {
+  background-image: url("../img/woodcut.jpg");
+}
+.tools-showcase-list-item#lightning-tool {
+  background-image: url("../img/lightning.jpg");
+}
+.tools-showcase-list-item p.tool {
+  width: 100%;
+  margin-bottom: 0;
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+}
