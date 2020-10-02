@@ -121,7 +121,8 @@ section.content-section {
     padding-bottom: 80px;
 
     .container {
-      width: 1400px;
+      width: 100%;
+      max-width: 1400px;
     }
   }
 }
@@ -132,6 +133,7 @@ section.content-section {
   padding-bottom: 60px;
 
   img {
+    align-self: center;
     width: 55%;
     margin: 0;
   }
@@ -168,16 +170,24 @@ section.content-section {
     display: flex;
     justify-content: space-between;
 
+    @media screen and (max-width: 1240px) {
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
     &-item {
       display: block;
       height: 250px;
       width: 250px;
       position: relative;
-      background-color: blue;
+      background-repeat: no-repeat;
       background-size: 100%;
       background-position: center;
       transition: background-size 0.5s;
 
+      @media screen and (max-width: 1240px) {
+        margin-bottom: 30px;
+      }
 
       &:hover {
         background-size: 110%;

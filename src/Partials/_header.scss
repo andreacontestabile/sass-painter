@@ -36,9 +36,38 @@ header {
     height: 50px;
     line-height: 50px;
 
+
     &-list {
       @include listFlex;
-      font-size: 13px;
+      height: 100%;
+
+      #hamburger-menu-button {
+        height: 100%;
+        a {
+          display: none;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          margin-right: 20px;
+          padding: 0 12px;
+          font-size: 25px;
+
+          @media screen and (max-width: 1000px) {
+            display: flex;
+          }
+
+          &:active,
+          &:visited {
+            color: #fff;
+          }
+        }
+      }
+
+      &-item:not(:first-child):not(:nth-child(2)), {
+        @media screen and (max-width: 1000px) {
+          display: none;
+        }
+      }
 
       &-item:first-child a:hover {
         background: none;
@@ -48,8 +77,10 @@ header {
         display: block;
         height: 100%;
         padding: 0 25px;
+        font-size: 13px;
         color: #fff;
         text-decoration: none;
+
 
         &:hover {
           background-color: $highlightColor;
@@ -58,6 +89,14 @@ header {
 
         .logo-img {
           width: 90px;
+          @media screen and (max-width: 1000px) {
+            vertical-align: middle;
+          }
+        }
+
+        @media screen and (max-width: 1240px) {
+          padding: 0 20px;
+          font-size: 11px;
         }
       }
 

@@ -10,8 +10,25 @@ body {
 }
 
 .container {
-  width: 1100px;
+  width: 100%;
+  max-width: 1100px;
   margin: 0 auto;
+}
+@media screen and (max-width: 1240px) {
+  .container {
+    max-width: 880px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .content-section .container {
+    padding: 0 20px;
+  }
 }
 
 header {
@@ -50,7 +67,32 @@ header .main-nav {
 header .main-nav-list {
   display: flex;
   list-style: none;
-  font-size: 13px;
+  height: 100%;
+}
+header .main-nav-list #hamburger-menu-button {
+  height: 100%;
+}
+header .main-nav-list #hamburger-menu-button a {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-right: 20px;
+  padding: 0 12px;
+  font-size: 25px;
+}
+@media screen and (max-width: 1000px) {
+  header .main-nav-list #hamburger-menu-button a {
+    display: flex;
+  }
+}
+header .main-nav-list #hamburger-menu-button a:active, header .main-nav-list #hamburger-menu-button a:visited {
+  color: #fff;
+}
+@media screen and (max-width: 1000px) {
+  header .main-nav-list-item:not(:first-child):not(:nth-child(2)) {
+    display: none;
+  }
 }
 header .main-nav-list-item:first-child a:hover {
   background: none;
@@ -59,6 +101,7 @@ header .main-nav-list a {
   display: block;
   height: 100%;
   padding: 0 25px;
+  font-size: 13px;
   color: #fff;
   text-decoration: none;
 }
@@ -68,6 +111,17 @@ header .main-nav-list a:hover {
 }
 header .main-nav-list a .logo-img {
   width: 90px;
+}
+@media screen and (max-width: 1000px) {
+  header .main-nav-list a .logo-img {
+    vertical-align: middle;
+  }
+}
+@media screen and (max-width: 1240px) {
+  header .main-nav-list a {
+    padding: 0 20px;
+    font-size: 11px;
+  }
 }
 header .main-nav-list #logo {
   padding: 0 10px 0 0;
@@ -88,9 +142,19 @@ header .main-nav-list #logo {
 .hero .hero-left {
   padding: 30px 60px 30px 0;
 }
+@media screen and (max-width: 1240px) {
+  .hero .hero-left {
+    padding: 30px 30px 30px 10px;
+  }
+}
 .hero .hero-left h1 {
   font-size: 28px;
   font-weight: 400;
+}
+@media screen and (max-width: 1240px) {
+  .hero .hero-left h1 {
+    font-size: 25px;
+  }
 }
 .hero .hero-left > h2 {
   font-weight: 400;
@@ -288,7 +352,8 @@ section.content-section#inspire {
   padding-bottom: 80px;
 }
 section.content-section#inspire .container {
-  width: 1400px;
+  width: 100%;
+  max-width: 1400px;
 }
 
 .feature-box {
@@ -297,6 +362,7 @@ section.content-section#inspire .container {
   padding-bottom: 60px;
 }
 .feature-box img {
+  align-self: center;
   width: 55%;
   margin: 0;
 }
@@ -329,15 +395,26 @@ section.content-section#inspire .container {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 1240px) {
+  .tools-showcase-list {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
 .tools-showcase-list-item {
   display: block;
   height: 250px;
   width: 250px;
   position: relative;
-  background-color: blue;
+  background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
   transition: background-size 0.5s;
+}
+@media screen and (max-width: 1240px) {
+  .tools-showcase-list-item {
+    margin-bottom: 30px;
+  }
 }
 .tools-showcase-list-item:hover {
   background-size: 110%;
